@@ -51,7 +51,7 @@ public class EviaAI_Swing_App extends JFrame {
         JPanel header = new JPanel(new BorderLayout(8,8));
         header.setBackground(new Color(200, 220, 240));
         JLabel title = new JLabel("Evia.AI");
-        title.setFont(new Font("SansSerif", Font.BOLD, 28));
+        title.setFont(new Font("Times New Roman", Font.BOLD, 28));
         JLabel subtitle = new JLabel("Search, contribute and learn how to make everyday items");
         subtitle.setFont(new Font("SansSerif", Font.PLAIN, 12));
         JPanel titleBox = new JPanel(new GridLayout(0,1));
@@ -157,4 +157,5 @@ public class EviaAI_Swing_App extends JFrame {
     private void showRankingsWindow(){}
 
     public static void main(String[] a){try{UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());}catch(Exception ignored){} SwingUtilities.invokeLater(EviaAI_Swing_App::new);} 
+
 }
