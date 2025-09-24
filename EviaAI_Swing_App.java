@@ -53,7 +53,7 @@ public class EviaAI_Swing_App extends JFrame {
         JLabel title = new JLabel("Evia.AI");
         title.setFont(new Font("Times New Roman", Font.BOLD, 28));
         JLabel subtitle = new JLabel("Search, contribute and learn how to make everyday items");
-        subtitle.setFont(new Font("SansSerif", Font.PLAIN, 12));
+        subtitle.setFont(new Font("Times New Roman", Font.PLAIN, 12));
         JPanel titleBox = new JPanel(new GridLayout(0,1));
         titleBox.setOpaque(false);
         titleBox.add(title); titleBox.add(subtitle);
@@ -159,3 +159,4 @@ public class EviaAI_Swing_App extends JFrame {
     public static void main(String[] a){try{UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());}catch(Exception ignored){} SwingUtilities.invokeLater(EviaAI_Swing_App::new);} 
 
 }
+
