@@ -1,0 +1,26 @@
+java.sql.SQLException: Neither MySQL nor H2 JDBC drivers were found on the classpath. See evia_last_error.log for details.
+	at EviaAIDAO.getConnection(EviaAIDAO.java:345)
+	at EviaAIDAO.saveUser(EviaAIDAO.java:118)
+	at EviaAI_Swing_App.showLoginDialog(EviaAI_Swing_App.java:150)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:318)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:723)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:702)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+Caused by: java.sql.SQLException: Neither MySQL nor H2 JDBC drivers were found on the classpath.
+java.class.path=C:\Users\HP\AppData\Roaming\Code\User\workspaceStorage\0fb21572f11e0e586f4754f60a12d490\redhat.java\jdt_ws\betterluck_6dd04dd7\bin
+WorkingDirectoryFiles=.vscode,DatabaseUtil.class,DatabaseUtil.java,database_setup.sql,EviaAIDAO.class,EviaAIDAO.java,EviaAISwingApp.class,EviaAISwingApp.java,eviaai_h2.mv.db,eviaai_h2.trace.db,EviaAI_Swing_App.class,EviaAI_Swing_App.java,evia_last_error.log,h2-2.1.214.jar,ItemInfo.class,ItemInfo.java,User.class,
+	at EviaAIDAO.getConnection(EviaAIDAO.java:340)
+	... 11 more
+Caused by: java.lang.ClassNotFoundException: org.h2.Driver
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:580)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:490)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:463)
+	at java.base/java.lang.Class.forName(Class.java:454)
+	at EviaAIDAO.getConnection(EviaAIDAO.java:307)
+	... 11 more
